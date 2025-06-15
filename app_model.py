@@ -1,5 +1,6 @@
 import streamlit as st
 import pandas as pd
+import matplotlib.pyplot as mp
 import joblib
 
 # Load saved objects
@@ -100,6 +101,14 @@ if section == 'Introduction':
 elif section == 'EDA':
     st.header("📊 Exploratory Data Analysis")
     st.markdown("I have done exploratory data analysis by pre-processing data and visualizing it using various plots.")
+
+    data = pd.read_csv("bank.csv") 
+    num_cols = ['age', 'balance', 'campaign', 'pdays', 'previous']  
+    data[num_cols].hist(figsize=(14, 10), bins=30, color='pink', edgecolor='purple')
+    mp.suptitle('Histogram of Features', fontsize=14)
+    mp.tight_layout()
+
+    st.pyplot(mp.gcf())
 
 elif section == 'Model Summary':
     st.header("🧠 Model Details")
