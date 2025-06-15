@@ -1,8 +1,8 @@
-# Introduction_To_Data_Science_Project
-# Bank Term Deposit Subscription Predictor
+# Introduction To Data Science Project
+## Bank Term Deposit Subscription Predictor
  
 This is my project for the **Introduction to Data Science** course.  
-I built a machine learning model and an interactive Streamlit app that predicts whether a bank client will subscribe to a term deposit.
+In it, built a machine learning model and an interactive Streamlit app that predicts whether a bank client will subscribe to a term deposit.
 
 ## Project Overview
 
